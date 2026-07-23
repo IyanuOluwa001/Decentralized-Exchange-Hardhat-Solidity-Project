@@ -1,7 +1,7 @@
 # Decentralized-Exchange-Hardhat-Solidity-Project
 Welcome to my Decentralized Exchange (DEX) project, a Uniswap V1-style automated market maker (AMM), with full swap function, wallet connectivity, and a graph representing the swap relationship between tokens. Deployed on the Sepolia testnet, this DEX enables users to swap ETH for $BAL tokens, add/remove liquidity, and view transaction events in a Next.js frontend. This project showcases a secure, functional DeFi application with robust smart contracts and a user-friendly interface.
 
-🚀 Features
+Features
 Token Swaps: Seamlessly swap ETH for $BAL (Balloons token) and vice versa using a constant product AMM formula (x * y = k).
 Liquidity Provision: Add or remove liquidity (ETH and $BAL) to the pool, earning liquidity provider tokens (LPTs).
 Event Tracking: View real-time transaction events (e.g., LiquidityProvided, EthToTokenSwap, TokenToEthSwap) on the /events page.
@@ -26,7 +26,7 @@ LiquidityProvided(address provider, uint256 ethAmount, uint256 tokenAmount, uint
 EthToTokenSwap(address swapper, uint256 ethAmount, uint256 tokenAmount)
 TokenToEthSwap(address swapper, uint256 tokenAmount, uint256 ethAmount)
 
-🔒 Security Measures:
+Security Measures:
 Security is a top priority to protect users and maintain trust in the DEX:
 
 Environment Variable Protection: .env files (packages/hardhat/.env, packages/nextjs/.env.local) are excluded from version control via .gitignore to safeguard private keys and API keys.
@@ -59,7 +59,9 @@ Frontend: https://dex-challenge-beta.vercel.app
 Balloons Contract: 0x678596a0B16d7E547d54F8fD7Ada198f22F568ac
 DEX Contract: 0x9957706d499aB3F2945321e78154Ae704EA29d65
 
-🤝 Contributing
+🤝 Contributing:
+
 Contributions are welcome! Fork the repo, make changes, and submit a pull request. Ensure .env files remain secure and test on Sepolia before deploying.
-📜 License
+📜 License:
+
 This project is licensed under the MIT License.
